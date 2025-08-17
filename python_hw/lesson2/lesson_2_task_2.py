@@ -1,0 +1,11 @@
+# Определить високосный или не високоный год
+def is_year_leap(year):
+    if (year % 4 == 0):
+        return True
+    else:
+        return False
+year = int(input("Введите год: "))
+if is_year_leap(year):
+    print(f"{year} : високосный год.")
+else:
+    print(f"{year} : не високосный год.")
